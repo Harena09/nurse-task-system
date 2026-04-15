@@ -1,4 +1,6 @@
 
+const API_URL = window.location.origin;
+
 // REGISTER
 const registerForm = document.querySelector("form");
 
@@ -19,7 +21,7 @@ if (registerForm && document.getElementById("fullname")) {
     }
 
     try {
-      const res = await fetch("http://localhost:8080/api/auth/register", {
+      const res = await fetch(`${API_URL}/api/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ fullname, role, email, password }),
