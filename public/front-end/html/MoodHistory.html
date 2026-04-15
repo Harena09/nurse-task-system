@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/MoodHistory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Mood History</title>
+</head>
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside content -->
+        <aside>
+
+            <!-- Logo -->
+            <div class="top-left">
+                <div class="logo">
+
+                    <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+      
+
+
+
+         
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined ">account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+
+            <!-- end profile -->
+
+
+ 
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+          
+        </aside>
+
+
+
+        <!-- Main content -->
+        <main>
+
+   
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Mood Overview Section -->
+
+            <div class="bottomsection">
+
+
+                <div class="tasks-lists">
+                    <a class="back-btn" href="moodtracker.html">Back</a>
+                    <div class="tasks-lists-title">
+                        <h3>Mood Overview </h3>
+                    </div>
+
+
+                    <form id="new-task-form" class="new-task-form">
+
+                        <!--  Recent check ins  -->
+
+                        <div class="title">
+
+                            <h3>Recent Check-ins</h3>
+
+                        </div>
+
+                         <!-- Mood Summary List -->
+                        <div class="Mood-summary">
+
+                            <div class="MoodHistory" data-mood="great">
+
+                                <h4>Great<span class="moodStats"></span></h4>
+
+                            </div>
+
+                            <div class="MoodHistory" data-mood="good">
+
+
+
+                                <h4>Good<span class="moodStats"></span></h4>
+
+
+
+                            </div>
+
+                            <div class="MoodHistory" data-mood="neutral">
+
+
+
+                                <h4>Neutral<span class="moodStats"></span></h4>
+
+
+
+                            </div>
+
+
+                            <div class="MoodHistory" data-mood="stressed">
+
+
+
+                                <h4>Stressed<span class="moodStats"></span></h4>
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="MoodHistory" data-mood="anxious">
+
+
+
+                                <h4>Anxious<span class="moodStats"></span></h4>
+
+
+
+                            </div>
+
+
+                            <div class="MoodHistory" data-mood="exhausted">
+
+
+
+                                <h4>Exhausted<span class="moodStats"></span></h4>
+
+
+
+                            </div>
+
+
+
+                            <div class="MoodHistory" data-mood="bad">
+
+                                <h4>Bad<span class="moodStats"></span></h4>
+
+                            </div>
+
+                        </div>
+                </div>
+
+            </div>
+
+            <!--  End Mood History list -->
+
+
+            </form>
+
+    </div>
+
+    </div>
+
+
+    </main>
+
+    <script src="../javascript/dashboard.js"></script>
+    <script src="../javascript/logout.js"></script>
+    <script src="../javascript/login.js"></script>
+    <script src="../javascript/moodHistory.js"></script>
+
+</body>
+
+</html>

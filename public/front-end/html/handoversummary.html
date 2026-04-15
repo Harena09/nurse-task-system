@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/handoversummary.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Handover Summary</title>
+</head>
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside  content -->
+        <aside>
+
+
+
+            <div class="top-left">
+                <div class="logo">
+
+                    <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+
+
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined ">account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end side bar -->
+
+
+
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+
+        </aside>
+
+
+
+        <!-- Main content -->
+        <main>
+
+
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Handover History section -->
+
+            <div class="bottomsection">
+
+                <div class="tasks-lists">
+                    <a href="handover.html">Back</a>
+                    <div class="tasks-lists-title">
+
+                        <h3>Handover Records</h3>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Handover Summary Lists -->
+
+            <div class="handover-summary-list" id="handover-list">
+                <div class="summarybox">
+
+                    <h4>Handover Summary</h4>
+                    <h5>June 15, 2024</h5>
+                    <div class="nurseshifts">
+                        <p>nurse 1</p>
+                        <p>nurse 2</p>
+
+                    </div>
+                    <a href="handoversummarydetails.html">View details</a>
+
+                </div>
+
+                <div class="summarybox">
+
+                    <h4>Handover Summary</h4>
+                    <h5>June 14, 2024</h5>
+                    <div class="nurseshifts">
+                        <p>nurse 1</p>
+                        <p>nurse 2</p>
+
+                    </div>
+                    <a href="handoversummarydetails.html">View details</a>
+                </div>
+
+        </main>
+
+
+        <script src="../javascript/dashboard.js"></script>
+        <script src="../javascript/logout.js"></script>
+        <script src="../javascript/login.js"></script>
+        <script src="../javascript/handoversummary.js"></script>
+
+</body>
+
+</html>

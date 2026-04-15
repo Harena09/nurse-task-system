@@ -1,0 +1,393 @@
+/* Handover Summary CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+}
+
+
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+
+.text-muted {
+    color: #777;
+}
+
+
+/* aside */
+
+
+/* sidebar */
+.sidebar li a span {
+    font-size: 1.1rem;
+    color: #19a06c;
+}
+
+.aside.aside.sidebar a:last-child {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+
+}
+
+
+/* bottom left */
+.logout a span {
+    font-size: 1.1rem;
+    color: #19a06c;
+}
+
+/* end bottom left  */
+
+
+
+/* upper title main  */
+
+
+/* end upper title main  */
+
+
+
+
+/* middle part main section  */
+.middle-part {
+
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* summary section */
+
+main input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #2c2c2c;
+
+}
+
+main .date {
+    display: inline-block;
+    background-color: rgb(78, 120, 197);
+    border-radius: 4px;
+}
+
+main .task-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+main .task-summary>div {
+    background-color: #246092;
+    padding: 0.65rem;
+    border-radius: 5px;
+    margin-top: 0.8rem;
+    min-height: 80px;
+    box-shadow: 0 2px 4px rgba(201, 24, 24, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+main .task-summary>div {
+    box-shadow: none;
+}
+
+main .task-summary>div span {
+
+    color: #19a06c;
+}
+
+main .task-summary>div .middle h3 {
+
+    font-size: 1.5rem;
+}
+
+main h1 {
+    color: black;
+}
+
+main .task-summary h4 {
+    color: #333;
+    font-weight: 100;
+}
+
+
+main .tasks-lists {
+
+    margin-top: 1rem;
+}
+
+main .tasks-lists h3 {
+
+    color: #000000;
+}
+
+main .tasks-lists h4 {
+
+    color: #000000;
+}
+
+main .tasks-lists .tasks-lists-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+
+}
+
+.new-task-form {
+    margin-top: 0.8rem;
+    border-top: 0.5px solid #ddd;
+}
+
+
+.bottomsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    align-items: start;
+}
+
+
+main .tasks-lists table {
+
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(201, 24, 24, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+main .tasks-lists table:hover {
+
+    box-shadow: 0 4px 8px rgba(63, 61, 61, 0.2);
+}
+
+.edit-task-link,
+.delete-task-link {
+    display: inline-block;
+    padding: 0.3rem 0.55rem;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.83rem;
+}
+
+.edit-task-link {
+    background-color: #1d72b8;
+}
+
+.edit-task-link:hover {
+    background-color: #135a93;
+}
+
+.delete-task-link {
+    background-color: #c0392b;
+}
+
+.delete-task-link:hover {
+    background-color: #922b21;
+}
+
+main table tbody tr {
+    height: 3.8rem;
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+main table tbody td {
+    height: 3.8rem;
+    border-bottom: 1px solid #362d2d;
+    color: #333;
+}
+
+
+
+
+
+/* New task form styling */
+.new-task-form {
+    background: #ffffff;
+    border: 1px solid #dde2e6;
+    border-radius: 10px;
+    padding: 1.4rem;
+    box-shadow: 0 6px 18px rgba(20, 20, 20, 0.08);
+    max-width: 80vw;
+    width: 100%;
+    margin: 1.2rem auto 1.2rem;
+}
+
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+.container {
+    margin-bottom: 0.5rem;
+}
+
+/* desktop center wrapper */
+.bottomsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    margin-top: 0;
+}
+
+
+.bottomsection .tasks-lists {
+    margin-top: 0px;
+}
+
+.tasks-lists-title {
+    margin-bottom: 0.25rem;
+}
+
+.new-task-form {
+    margin-top: 0px;
+}
+
+.new-task-form>div,
+.new-task-form .form-grid {
+    margin-bottom: 0.85rem;
+}
+
+.new-task-form .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.new-task-form .form-grid>div {
+    margin-bottom: 0;
+}
+
+.new-task-form label {
+    font-weight: 600;
+    color: #2f3a46;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.new-task-form input[type="text"],
+.new-task-form input[type="time"],
+.new-task-form input[type="date"],
+.new-task-form select,
+.new-task-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c6cbd5;
+    border-radius: 6px;
+    padding: 0.6rem 0.7rem;
+    font-size: 0.96rem;
+    color: #333;
+    background-color: #fafbfc;
+}
+
+
+.new-task-form .form-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.new-task-form .form-grid>div {
+    width: 100%;
+}
+
+
+.new-task-form input[type="text"]:focus,
+.new-task-form input[type="time"]:focus,
+.new-task-form input[type="date"]:focus,
+.new-task-form select:focus,
+.new-task-form textarea:focus {
+    outline: none;
+    border-color: #66aaf1;
+    box-shadow: 0 0 0 2px rgba(102, 170, 241, 0.2);
+}
+
+.new-task-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.new-task-form .form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.new-task-form button,
+.new-task-form a.back-btn {
+    border: none;
+    border-radius: 6px;
+    padding: 0.56rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-task-form button {
+    background: #1f8f2a;
+    color: #fff;
+}
+
+.new-task-form button:hover {
+    background: #166c1f;
+}
+
+.new-task-form a.back-btn {
+    background: #f4f5f7;
+    color: #333;
+}
+
+.new-task-form a.back-btn:hover {
+    background: #eaeaed;
+}
+
+.new-task-form .checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+

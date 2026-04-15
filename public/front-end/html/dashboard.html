@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Dashboard</title>
+
+</head>
+
+
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside Section-->
+        <aside>
+           
+            <div class="top-left">
+                <div class="logo">
+                   
+                <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined " >account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html" id="logout">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main>
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Intro   -->
+            <div class="middle-part">
+                <p>  Ready for your shift? Here's your priority tasks and patient updates.</p>
+            </div>
+
+            <!-- Summary -->
+            <div class="summary">
+                <div class="taskNumbers">
+                    <span class="material-symbols-outlined">
+                        Assignment
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                         <h3 id="total-tasks-count">0</h3>
+                            <h4>Today's Tasks</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="PatientNumbers">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                          <h3 id="patients-count">0</h3>
+                            <h4>Total Patients</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="taskCompleted">
+                    <span class="material-symbols-outlined">
+                        task_alt
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3 id="completed-tasks-count">0</h3>
+                            <h4>Completed Tasks</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="UrgentTasks">
+                    <span class="material-symbols-outlined">
+                        warning
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                             <h3 id="urgent-tasks-count">0</h3>
+                            <h4>Urgent</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ 
+            <div class="bottomsection">
+
+                <!-- Tasks list  -->
+                <div class="tasks-lists">
+                    <div class="tasks-lists-title">
+                        <h3>Today's PriorityTasks</h3>
+
+                        <a href="tasks.html">
+                            <h4>View all</h4>
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </a>
+
+                    </div>
+
+                     <!-- Tasks Table  -->
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Patient</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dashboard-table">
+                            <tr>
+                                <td>Administer Medication Morning insulin</td>
+                                <td>Peter Maggy</td>
+                                <td>10:00 AM</td>
+                                <td class="warning">Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Administer Medication Morning insulin</td>
+                                <td>Peter Maggy</td>
+                                <td>10:00 AM</td>
+                                <td class="warning">Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Administer Medication Morning insulin</td>
+                                <td>Peter Maggy</td>
+                                <td>10:00 AM</td>
+                                <td class="warning">Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Administer Medication Morning insulin</td>
+                                <td>Peter Maggy</td>
+                                <td>10:00 AM</td>
+                                <td class="warning">Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mood Log information -->
+                <div class="moodloginfo" id="mood-container">
+                    <div class="moodloginfo-title">
+                        <h3>Mood Log</h3>
+                        <a href="moodtracker.html">
+                            <h4>Log Mood</h4>
+                        </a>
+                    </div>
+
+                    <div class="Mood" id="mood-dashboard" >
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Good</h3>
+                                <input type="date" class="mood-date"  >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    
+    <script src="../javascript/logout.js"></script>
+    <script src="../javascript/login.js"></script>
+   <script src="../javascript/dashboard.js"></script>
+      <script src="../javascript/tasklist.js"></script>
+       <script src="../javascript/moodtracker.js"></script>
+     <script src="../javascript/patientlist.js"></script>
+
+</body>
+
+</html>
+

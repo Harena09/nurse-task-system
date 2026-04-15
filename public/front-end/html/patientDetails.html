@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/patientDetails.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>New Patient</title>
+</head>
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside content -->
+        <aside>
+
+            <!-- top leftcontent logo -->
+            <!-- Logo -->
+            <div class="top-left">
+                <div class="logo">
+
+                    <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+            <!-- end top -->
+
+
+
+            <!-- top middle profile -->
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined ">account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+            <!-- end profile -->
+
+
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end side bar -->
+
+
+
+
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+            <!--  content bottom left content -->
+        </aside>
+
+
+
+        <!-- Main content -->
+        <main>
+
+            <!-- upper + middlesection  -->
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- end  upper main section  -->
+
+
+
+
+
+
+            <!-- Patient Details Section -->
+
+            <div class="bottomsection">
+
+                <div class="tasks-lists">
+
+                    <a href="patients.html">Back</a>
+                    <div class="tasks-lists-title">
+                        <h3> Patient</h3>
+                    </div>
+
+                    <!-- Patient Form-->
+                    <form id="edit-patient-form" class="new-task-form">
+                        <div>
+                            <label for="patient-title">Name</label><br>
+                            <input id="patient-title" name="taskTitle" type="text" required />
+                        </div>
+
+                        <div class="form-grid">
+                            <div>
+                                <label for="patient-age">Age</label><br>
+                                <input id="patient-age" name="patient" type="text" required />
+                            </div>
+                            <div>
+                                <label for="patient-birthdate">Date of Birth</label><br>
+                                <input id="patient-birthdate" name="category" type="date" required />
+                            </div>
+                            <div>
+                                <label for="patient-gender">Gender</label><br>
+                                <input id="patient-gender" name="category" type="text" required />
+                            </div>
+                            <div>
+                                <label for="patient-bloodtype">Blood Type</label><br>
+                                <input id="patient-bloodtype" name="category" type="text" required />
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div>
+                                <label for="patient-ward">Ward *</label><br>
+                                <input id="patient-ward" name="patient" type="text" required />
+
+                            </div>
+
+                            <div>
+                                <label for="patient-bed">Bed Number *</label><br>
+                                <input id="patient-bed" name="patient" type="text" required />
+
+                            </div>
+
+
+                        </div>
+
+                        <div>
+                            <label for="patient-diagnosis">Diagnosis</label><br>
+                            <input id="patient-diagnosis" name="taskTitle" type="text" required />
+                        </div>
+
+                        <div>
+                            <label for="patient-allergies">Allergies</label><br>
+                            <input id="patient-allergies" name="taskTitle" type="text" required />
+                        </div>
+
+                        <div>
+                            <label for="patient-note">Note</label><br>
+                            <input id="patient-note" name="taskTitle" type="text" required />
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" id="edit-patient"> Edit patient </button>
+                            <button type="submit" class="deleted-patient"> Deleted patient </button>
+                            <a class="back-btn" href="patients.html">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+        </main>
+
+        <!-- End Main -->
+
+        <script src="../javascript/dashboard.js"></script>
+        <script src="../javascript/logout.js"></script>
+        <script src="../javascript/login.js"></script>
+        <script src="../javascript/patientlist.js"></script>
+        <script src="../javascript/editpatient.js"></script>
+
+
+</body>
+
+</html>

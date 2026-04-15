@@ -1,0 +1,296 @@
+
+** Tasks CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:0;
+    list-style: none;
+    appearance: none ;
+}
+
+
+
+
+h1{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+
+
+.text-muted{
+    color: #777;
+}
+
+
+
+
+/* sidebar */
+
+
+.sidebar li a span{
+    font-size: 1.1rem;
+    color: #19a06c;
+}
+
+.aside.aside.sidebar a:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+
+}
+
+
+
+/* bottom left */
+
+.logout a span{
+    font-size: 1.1rem;
+    color: #19a06c;
+}
+
+
+
+
+/* ============ MAIN ============ */
+
+
+
+
+/* middle part main section  */
+ .middle-part {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+
+}
+
+
+/* summary section */
+
+main .summary > div .middle h3{
+  
+  font-size: 1.5rem;
+}
+
+main h1{
+    color: black;
+}
+
+
+main .tasks-lists {
+
+    margin-top: 1rem;;
+}
+
+main .tasks-lists h3{
+
+    color: #000000;
+}
+
+main .tasks-lists h4{
+
+    color: #000000;
+}
+
+main .tasks-lists .tasks-lists-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+} 
+
+
+/* Bottom section */
+
+.bottomsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    align-items: start;
+}
+
+
+main .tasks-lists table {
+
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(75, 71, 71, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+main .tasks-lists table:hover {
+
+    box-shadow: 0 4px 8px rgba(63, 61, 61, 0.2);
+}
+
+/* new task button*/
+.tasks-lists-title a{
+
+    font-size: 550;
+  
+    padding: 7px;
+    border-radius: 5px;
+    border: solid 1px #afafaf;
+}
+
+
+main table tbody tr{
+    height: 3.8rem;
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+main table tbody td{
+    height: 3.8rem;
+    color: #333;
+}
+
+
+
+
+
+/* Status color coding */
+
+
+.warning-pending {
+    background-color: #facc15; 
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+}
+
+.warning-completed {
+    background-color: #22c55e;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+}
+
+.warning-inprogress {
+    background-color: #6b6b6a; 
+     color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+}
+
+.warning-uncompleted {
+    background-color: #ef4444; 
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+}
+
+
+
+/* Priority edit */
+
+.priority-high{
+
+   background-color: #550ec7; 
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+    
+
+}
+
+
+.priority-low{
+
+   background-color: #0e5bc7; 
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+    
+
+}
+
+
+
+
+
+/* Edit button */
+
+main table tbody td a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 3rem; 
+}
+.edit-task-link {
+  
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.15s ease;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color:  #1e40af;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+
+.edit-task-link:hover {
+    color: #1e40af; 
+    transform: translateY(-1px);
+    text-decoration: underline;
+}
+
+/* Delete button */
+.delete-task-link {
+    
+    
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.15s ease;
+    background-color:#dc2626 ;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+ border-radius: 5px;
+}
+
+.delete-task-link:hover {
+    color: #991b1b; 
+    transform: translateY(-1px);
+    text-decoration: underline;
+}
+
+
+.edit-task-link:hover {
+    background-color: #bfdbfe;
+    text-decoration: none;
+}
+
+.delete-task-link:hover {
+    background-color: #fecaca;
+    text-decoration: none;
+}

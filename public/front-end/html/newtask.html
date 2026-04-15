@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/newtask.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>New Task</title>
+</head>
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside  content -->
+        <aside>
+
+           
+            <!-- Logo -->
+            <div class="top-left">
+                <div class="logo">
+                   
+                <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+            <!-- end top -->
+
+
+
+            <!-- top middle profile -->
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined " >account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+            <!-- end profile -->
+
+
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+                  
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end side bar -->
+
+
+           
+
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+            <!--  content bottom left content -->
+        </aside>
+
+
+
+        <!-- Main content -->
+        <main>
+
+            
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- end  upper main section  -->
+
+
+
+
+
+            <!-- New Task Section-->
+
+            <div class="bottomsection">
+
+                <div class="tasks-lists">
+
+                    <div class="tasks-lists-title">
+                        <h3>New task</h3>
+                    </div>
+
+                      <!-- New Task Form -->
+                    <form id="new-task-form" class="new-task-form">
+                        <div>
+                            <label for="task-title">Task title</label><br>
+                            <input id="task-title" name="taskTitle" type="text" required />
+                        </div>
+                        <div>
+                            <label for="task-desc">Description</label><br>
+                            <textarea id="task-desc" name="description" rows="3" required></textarea>
+                        </div>
+                        <div class="form-grid">
+                            <div>
+                                <label for="task-patient">Patient</label><br>
+                                <input id="task-patient" name="patient" type="text" required />
+                            </div>
+                            <div>
+                                <label for="task-category">Category</label><br>
+                                <input id="task-category" name="category" type="text" required />
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div>
+                                <label for="task-status">Status</label><br>
+                                <select id="task-status" name="status" required>
+                                   <option value="Pending">Pending</option>
+                                <option value="InProgress">In Progress</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Uncompleted">UnCompleted</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="task-time">Time</label><br>
+                                <input id="task-time" name="time" type="time" required />
+                            </div>
+                        </div>
+                        <div>
+                            <label for="task-priority">Priority</label><br>
+                            <select id="task-priority" name="priority" required>
+                                <option value="Urgent">Urgent</option>
+                                <option value="Not Urgent">Not Urgent</option>
+                            </select>
+                        </div>
+                        <div class="form-grid">
+                            <div>
+                                <label for="task-shift">Shift</label><br>
+                                <select id="task-shift" name="shift" required>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Night">Night</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="task-shift-date">Shift date</label><br>
+                                <input id="task-shift-date" name="shiftDate" type="date" required />
+                            </div>
+                        </div>
+                        <div class="checkbox-row">
+                            <label>
+                            Flag to next nurse
+                            </label>
+                            <input id="task-flag" name="flagNextNurse" type="checkbox" />
+                        </div>
+                        <p class="flag-info"> Tick if the task must be continued or check by the next nurse</p>
+                        <div class="form-actions">
+                            <button type="submit">Create task</button>
+                            <a class="back-btn" href="tasks.html">Cancel</a>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+       
+
+        </main>
+  <!-- End Main -->
+
+    <script src="../javascript/dashboard.js"></script>
+    <script src="../javascript/logout.js"></script>
+    <script src="../javascript/login.js"></script>
+     <script src="../javascript/newtask.js"></script>
+
+</body>
+
+</html>

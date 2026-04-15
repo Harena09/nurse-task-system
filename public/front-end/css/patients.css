@@ -1,0 +1,230 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:0;
+    list-style: none;
+    appearance: none ;
+}
+
+
+
+h1{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+  
+.text-muted{
+    color: #777;
+}
+
+
+
+
+/* sidebar */
+.sidebar li a span{
+    font-size: 1.1rem;
+    color: #19a06c;
+}
+
+.aside.aside.sidebar a:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+
+}
+
+
+/* bottom left */
+.logout a span{
+    font-size: 1.1rem;
+    color: #19a06c;
+}
+
+
+
+
+/* middle part main section  */
+ .middle-part {
+
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    
+}
+
+
+.middle-part .search-bar{
+    padding: 8px;
+}
+.middle-part .add-patient-btn{
+    font-size: 550;
+    padding: 7px;
+    border-radius: 5px;
+    border: solid 1px #afafaf;
+    padding: 8px;
+    color: #000000;
+}
+
+
+/* summary section */
+
+main input{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #2c2c2c;
+
+}
+
+main .date{
+    display: inline-block;
+    background-color: rgb(73, 186, 176);
+    border-radius: 4px;
+}
+
+main .patients-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+}
+
+
+
+
+
+
+/* patient top section edit */
+
+.patient-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px
+   
+}
+
+.patient-top h4{
+     margin-bottom: 0px;
+     margin-right: 0px;
+}
+
+
+/* patient and ward icons edit */
+ main .patients-grid > div{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1.rem;
+    box-shadow: 0 2px 4px rgba(95, 85, 85, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+
+main .patients-grid > div h4{
+  
+    color: #458c60;
+    background-color: rgb(180, 234, 195);
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-left: 5px;
+    padding: 5px;
+
+
+}
+
+
+main .patients-grid > div span{
+  
+    color: #19a09b;
+    background-color: rgb(181, 217, 230);
+    border-radius: 5px;
+
+}
+
+
+main .patients-grid > div .middle h3{
+  
+  font-size: 1.5rem;
+}
+
+main h1{
+    color: black;
+}
+
+main .patients-gridh4{
+    color: #333;
+    font-weight: 100;
+}
+
+
+main .tasks-lists {
+
+    margin-top: 1rem;;
+}
+
+main .tasks-lists h3{
+
+    color: #000000;
+}
+
+
+
+
+
+.bottomsection {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.6rem;
+    align-items: start;
+}
+
+
+
+
+
+/* View details edit section */
+
+
+.patient-footer {
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #e5e7eb; 
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+
+.patient-footer a {
+    text-decoration: none;
+    color: #0f766e;
+    font-weight: 500;
+    display: block;
+    padding: 0.4rem;
+   
+}
+
+/* Hover effect */
+.patient-footer:hover {
+    background-color: #f0fdfa; 
+    border-radius: 0 0 5px 5px;
+}
+
+.patient-footer:hover a {
+    color: #064e3b; 
+}
+
+

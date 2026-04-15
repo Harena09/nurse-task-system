@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/handover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Handover</title>
+</head>
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside content left content -->
+        <aside>
+
+            <!-- top leftcontent logo -->
+            <!-- Logo -->
+            <div class="top-left">
+                <div class="logo">
+
+                    <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined ">account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+            <!-- end profile -->
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end side bar -->
+
+
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+            <!--  content bottom left content -->
+        </aside>
+
+
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- Shift Information -->
+
+            <div class="bottomsection">
+
+                <div class="tasks-lists">
+
+                    <div class="tasks-lists-title">
+                        <h3>Shift Information</h3>
+
+                        <a href="handoversummary.html">View Past Handovers</a>
+
+                    </div>
+
+                    <!-- Handover Form -->
+
+                    <form id="handover-form" class="new-task-form">
+
+                        <div class="form-grid">
+                            <div>
+                                <label for="shift">Shift</label><br>
+                                <select id="shift" name="shift" required>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Night">Night</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="shiftDate">Shift date</label><br>
+                                <input id="shiftDate" name="shiftDate" type="date" required />
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div>
+                                <label for="fromNurse">From</label><br>
+                                <input id="fromNurse" name="from" type="text" required />
+                            </div>
+                            <div>
+                                <label for="toNurse">To (Next Nurse)</label><br>
+                                <input id="toNurse" name="to" type="text" required />
+                            </div>
+                        </div>
+
+
+
+                        <!-- Summary -->
+                        <div class="summary">
+                            <div class="taskNumbers">
+                                <span class="material-symbols-outlined">
+                                    Assignment
+                                </span>
+
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3 id="total-tasks-count">0</h3>
+                                        <h4>Today's Tasks</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="PatientNumbers">
+                                <span class="material-symbols-outlined">
+                                    group
+                                </span>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3 id="patients-count">0</h3>
+                                        <h4>Total Patients</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="taskCompleted">
+                                <span class="material-symbols-outlined">
+                                    task_alt
+                                </span>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3 id="completed-tasks-count">0</h3>
+                                        <h4>Completed Tasks</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="UrgentTasks">
+                                <span class="material-symbols-outlined">
+                                    warning
+                                </span>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3 id="urgent-tasks-count">0</h3>
+                                        <h4>Urgent</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- SBAR section  -->
+                        <div>
+                            <label for="situation">S - Situation</label><br>
+                            <textarea id="situation" name="situation" rows="3" required></textarea>
+                        </div>
+                        <div>
+                            <label for="background">B - Background</label><br>
+                            <textarea id="background" name="background" rows="3" required></textarea>
+                        </div>
+                        <div>
+                            <label for="assessment">A - Assessment</label><br>
+                            <textarea id="assessment" name="assessment" rows="3" required></textarea>
+                        </div>
+                        <div>
+                            <label for="recommendation">R - Recommendation</label><br>
+                            <textarea id="recommendation" name="recommendation" rows="3" required></textarea>
+                        </div>
+                        <div>
+                            <label for="taskSummary">Task Summary</label><br>
+                            <textarea id="taskSummary" name="taskSummary" rows="3" required></textarea>
+                        </div>
+                        <div>
+                            <label for="additionalNotes">Additional Notes</label><br>
+                            <textarea id="additionalNotes" name="additionalNotes" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit">Send Handover</button>
+                            <a class="back-btn" href="dashboard.html">Cancel</a>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- EndToday's task lists , Priority Tasks -->
+
+        </main>
+    </div>
+
+
+    <script src="../javascript/dashboard.js"></script>
+    <script src="../javascript/logout.js"></script>
+    <script src="../javascript/login.js"></script>
+    <script src="../javascript/sendhandover.js"></script>
+    <script src="../javascript/tasklist.js"></script>
+    <script src="../javascript/patientlist.js"></script>
+
+
+
+</body>
+
+</html>

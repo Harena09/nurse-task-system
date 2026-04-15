@@ -1,0 +1,174 @@
+/* base reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY  */
+body {
+   font-family: Arial, sans-serif;
+     display: flex;
+     height: 100vh;
+     margin: 0;
+     background-color:#0f172a;
+     overflow: hidden;   
+}
+
+/* =LEFT SIDE (*/
+.left-side {
+    width: 50vw;
+    min-height: 100vh;
+    background: #0b2943;
+    position: relative;
+    padding: 2.5rem 3rem;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  purple */
+.left-overlay::before,
+.left-overlay::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color:  #191366 ;
+    opacity: 0.9;
+}
+
+.left-overlay::before {
+    width: 480px;
+    height: 480px;
+    left: -220px;
+    top: -80px;
+}
+
+.left-overlay::after {
+    width: 520px;
+    height: 520px;
+    right: -260px;
+    bottom: -120px;
+}
+
+/* logo area */
+.left-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    z-index: 1;
+}
+
+.logo-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: #ffffff;
+}
+
+.logo-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* === RIGHT SIDE / FORM === */
+.right-side {
+    width: 50vw;
+    min-height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111827;
+    padding: 2rem;
+}
+
+/* your original .container  */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.4rem 2.6rem;
+    background-color: white;
+    border-radius: 26px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* headings and form */
+h1 {
+    text-align: center;
+    color: #111827;
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 0.9rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #4b5563;
+    font-size: 0.82rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.65rem 0.7rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    background-color: #f9fafb;
+}
+
+/* button styles */
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+button.primary-btn {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    margin-top: 0.7rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #6366f1, #4f46e5);
+    color: white;
+    font-weight: 500;
+}
+
+
+/* simple default button  */
+button:not(.primary-btn) {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #6366f1, #4f46e5);
+    color: white;
+    font-weight: 500;
+}
+
+/* footer text */
+.foot-container {
+    margin-top: 0.8rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.form-footer a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+

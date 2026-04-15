@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/Aiassistant.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>AI</title>
+</head>
+
+<body>
+    <div class="container" id="dashboard">
+
+        <!-- Aside content left content -->
+        <aside>
+
+            <!-- top leftcontent logo -->
+
+            <div class="top-left">
+                <div class="logo">
+
+                    <h2 class="taskmng">NurseFlow</h2>
+                </div>
+            </div>
+            <!-- end top -->
+
+
+
+            <!-- top middle profile -->
+
+            <!-- Profile -->
+            <div class="top-middle">
+                <div class="profile">
+                    <span class="material-symbols-outlined ">account_circle</span>
+                    <div class="profilepic"></div>
+                    <h2>Profile name</h2>
+                    <div class="online-status"></div>
+                </div>
+            </div>
+
+            <!-- end profile -->
+
+
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined">
+                                dashboard_2
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            <span class="material-symbols-outlined">
+                                ballot
+                            </span>
+                            <h3>My Tasks</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html">
+                            <span class="material-symbols-outlined">
+                                patient_list
+                            </span>
+                            <h3>Patients</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="handover.html">
+                            <span class="material-symbols-outlined">
+                                compare_arrows
+                            </span>
+                            <h3>Handover</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodtracker.html">
+                            <span class="material-symbols-outlined">
+                                Favorite
+                            </span>
+                            <h3>Mood Tracker</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aiAssistant.html">
+                            <span class="material-symbols-outlined">
+                                chat_bubble
+                            </span>
+                            <h3>AI Assistant</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                brightness_5
+                            </span>
+                            <h3>Profile Settings</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end side bar -->
+
+
+
+            <!--  content bottom left content -->
+
+
+            <!-- Logout -->
+            <div class="bottom-left">
+                <div class="logout">
+                    <a href="login.html">
+                        <span class="material-symbols-outlined">
+                            Logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+            <!--  content bottom left content -->
+        </aside>
+
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Header -->
+            <div class="title">
+                <div class="left-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right-title">
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </a>
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- end  upper main section  -->
+
+
+
+            <!-- AI assistant section -->
+
+            <div class="bottomsection">
+
+
+                <div class="tasks-lists">
+                    <a class="back-btn" href="dashboard.html">Back</a>
+                    <div class="tasks-lists-title">
+
+
+                        <div class="subtitles">
+                            <h3>NurseFlow assistant </h3>
+                            <p>Always here to help</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <section id="assistant-form" class="new-task-form">
+
+
+                        <div class="assistant-panel__header">
+                            <div class="assistant-logo">
+
+                            </div>
+                            <h2>Your AI Nursing Assistant</h2>
+                            <p class="assistant-subtitle">
+                                Ask me anything about nursing procedures, task management, or patient care guidance.
+                            </p>
+                        </div>
+
+
+                        <!-- Message Suggestions -->
+                        <div class="chat-suggestions">
+                            <button class="question">
+                                How do I prioritize urgent tasks during a busy shift?
+                            </button>
+                            <button class="question">
+                                What should be included in a good SBAR handover?
+                            </button>
+                            <button class="question">
+                                How to handle medication administration safely?
+                            </button>
+                            <button class="question">
+                                Signs of patient deterioration I should watch for?
+                            </button>
+                            <button class="question">
+                                How to manage stress during a night shift?
+                            </button>
+                            <button class="question">
+                                Best practices for documenting patient care?
+                            </button>
+                        </div>
+
+                        <!-- Chat Message Container -->
+                        <div id="chat-messages" class="chat-messages"></div>
+
+                        <!-- Input bar -->
+                        <form class="assistant-input" id="assistant-chat">
+                            <input type="text" id="chat-questions" placeholder="Ask a clinical question..." />
+                            <button type="submit" id="submit" class="send-button">
+                                send
+                            </button>
+                        </form>
+
+                        <p class="assistant-footer">
+                            Always follow your hospital’s protocols and consult supervisors for critical decisions.
+                        </p>
+
+                </div>
+
+            </div>
+
+    </div>
+
+
+
+
+    </form>
+
+    <!-- End form -->
+
+    </div>
+
+    </div>
+
+    </main>
+
+
+    <script src="../javascript/dashboard.js"></script>
+    <script src="../javascript/logout.js"></script>
+    <script src="../javascript/login.js"></script>
+    <script src="../javascript/aiAssistant.js"></script>
+
+
+</body>
+
+</html>
