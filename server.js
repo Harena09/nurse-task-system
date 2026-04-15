@@ -16,7 +16,6 @@ const profileRoutes = require("./backend/routes/profileRoutes");
 
 
 const app = express();//for the backend
-
 //middleware
 app.use(cors());
 app.use(express.json());
@@ -29,16 +28,33 @@ app.get("/tasks.html", (req, res) => {
 });
 
 
+
+
 // connect to mongo db 
-mongoose.connect('mongodb://localhost:27017/Database1')
-    .then(() => {
-        console.log('Connected to MongoDB');
-    })
-    .catch((error) => {
-        console.error('Error connecting to MongoDB:', error);
-    });
 
+//mongoose.connect('mongodb://localhost:27017/Database1')
+ //   .then(() => {
+ //       console.log('Connected to MongoDB');
+ //   })
+//    .catch((error) => {
+  //      console.error('Error connecting to MongoDB:', error);
+  //  });
+ 
 
+const isProduction = process.env.NODE_ENV === "production";
+
+const mongoURL = isProduction
+  ? process.env.MONGO_URI
+  : process.env.MONGO_LOCAL;
+
+if (!mongoURL) {
+  console.error("MongoDB connection string is missing!");
+  process.exit(1);
+}
+
+mongoose.connect(mongoURL)
+  .then(() => console.log("Connected to MongoDB"))
+  .catch(err => console.error("MongoDB error:", err));   
 app.use("/api/auth", authRoutes);
 
 app.use("/api/tasks", taskRoutes);
@@ -55,10 +71,12 @@ app.use("/api/profile", profileRoutes);
 
 //default route for backend testing
 app.get('/', (req, res) => {
-    res.send("Hello! The backend is working!")
-    console.log("working ka");
 
-})
+    res.sendFile(path.join(__dirname, "public", "front-end", "html", "register.html"));
+   // res.send("Hello! The backend is working!")
+  //  console.log("working ka");
+
+});
 
 
 
