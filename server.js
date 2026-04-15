@@ -72,7 +72,7 @@ app.use("/api/profile", profileRoutes);
 //default route for backend testing
 app.get('/', (req, res) => {
 
-    res.sendFile(path.join(__dirname, "public", "front-end", "html", "register.html"));
+    res.sendFile(path.join(__dirname, "public", "public/front-end", "html", "register.html"));
    // res.send("Hello! The backend is working!")
   //  console.log("working ka");
 
