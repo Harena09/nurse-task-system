@@ -52,7 +52,7 @@ npm start
 5.Start server:
 npm server.js
 ```
-
+---
 ## Purpose of the Project
 This project was created to demonstrate practical skills in:
 Full-stack web development
@@ -69,6 +69,6 @@ Patient record integration
 Analytics dashboard
 
 
-Author
+## Author
 Harenasoa Ralainandrasana
 Final-year BSc Computer Science Student at Middlesex University London
