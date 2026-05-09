@@ -46,7 +46,6 @@ cd nurse-task-management-system
 npm install
 
 
-
 4.Start the application:
 npm start
 
@@ -54,4 +53,22 @@ npm start
 npm server.js
 
 
+## Purpose of the Project
+This project was created to demonstrate practical skills in:
+Full-stack web development
+Database management
+User interface design
+Software engineering principles
+Team collaboration and project development
 
+## Future Improvements
+Real-time notifications
+Mobile optimisation
+Role-based access control
+Patient record integration
+Analytics dashboard
+
+
+Author
+Harenasoa Ralainandrasana
+Final-year BSc Computer Science Student at Middlesex University London
