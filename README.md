@@ -61,6 +61,8 @@ User interface design
 Software engineering principles
 Team collaboration and project development
 
+---
+
 ## Future Improvements
 Real-time notifications
 Mobile optimisation
@@ -68,6 +70,7 @@ Role-based access control
 Patient record integration
 Analytics dashboard
 
+---
 
 ## Author
 Harenasoa Ralainandrasana
